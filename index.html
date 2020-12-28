@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <div>
+        <div class="title">
+            <h2 class="xinqi">
+                <span>X</span>
+                <span>I</span>
+                <span>N</span>
+                <span>Q</span>
+                <span>I</span>
+    
+            </h2>
+            <h2 class="impossible">
+                <span>I</span>
+                <span>M</span>
+                <span>POSSIBLE</span>
+                
+            </h2>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="./image/icon/instagram.png"></a></li>
+            <li><a href="#"><img src="./image/icon/linkedin.png"></a></li>
+            <li><a href="#"><img src="./image/icon/facebook.png"></a></li>
+
+        </ul>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Moments</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+    </div>
+    <div class="grid-container">
+        <img src="./image/0.JPG">
+        <img src="./image/1.JPG">
+        <img src="./image/2.JPG">
+        <img src="./image/3.JPG">
+        <img src="./image/4.JPG">
+        <img src="./image/5.JPG">
+        <img src="./image/6.JPG">
+        <img src="./image/7.JPG">
+        <img src="./image/8.JPG">
+        <img src="./image/9.JPG">
+        <img src="./image/10.JPG">
+        <img src="./image/11.JPG">
+        <img src="./image/12.JPG">
+        <img src="./image/13.JPG">
+        <img src="./image/14.JPG">
+    </div>
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = () => {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight  + '%';
+        }
+    </script>
+
+ 
+</body>
+</html>
